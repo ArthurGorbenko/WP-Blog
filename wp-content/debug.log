@@ -1,0 +1,78 @@
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:21:42 UTC] 1
+[07-Nov-2019 16:31:11 UTC] PHP Fatal error:  Uncaught Error: Unsupported operand types in C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\header.php:22
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template.php(722): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-includes\template.php(671): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\wordpress\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\index.php(17): get_header()
+#4 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(78): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\header.php on line 22
+[07-Nov-2019 16:31:11 UTC] PHP Stack trace:
+[07-Nov-2019 16:31:11 UTC] PHP   1. {main}() C:\xampp\htdocs\wordpress\index.php:0
+[07-Nov-2019 16:31:11 UTC] PHP   2. require() C:\xampp\htdocs\wordpress\index.php:17
+[07-Nov-2019 16:31:11 UTC] PHP   3. require_once() C:\xampp\htdocs\wordpress\wp-blog-header.php:19
+[07-Nov-2019 16:31:11 UTC] PHP   4. include() C:\xampp\htdocs\wordpress\wp-includes\template-loader.php:78
+[07-Nov-2019 16:31:11 UTC] PHP   5. get_header($name = *uninitialized*) C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\index.php:17
+[07-Nov-2019 16:31:11 UTC] PHP   6. locate_template($template_names = *uninitialized*, $load = *uninitialized*, $require_once = *uninitialized*) C:\xampp\htdocs\wordpress\wp-includes\general-template.php:41
+[07-Nov-2019 16:31:11 UTC] PHP   7. load_template($_template_file = *uninitialized*, $require_once = *uninitialized*) C:\xampp\htdocs\wordpress\wp-includes\template.php:671
+[07-Nov-2019 16:31:11 UTC] PHP   8. require_once() C:\xampp\htdocs\wordpress\wp-includes\template.php:722
+[07-Nov-2019 18:02:11 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected ')' in C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\functions.php:723
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-config.php(93): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+
+Next Exception: syntax error, unexpected ')' in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php:86
+Stack trace:
+#0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
+#1 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
+[07-Nov-2019 18:24:53 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\functions.php:782
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-config.php(93): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+
+Next Exception: syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php:86
+Stack trace:
+#0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
+#1 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
+[07-Nov-2019 18:26:53 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\functions.php:785
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-config.php(93): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#3 {main}
+
+Next Exception: syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php:86
+Stack trace:
+#0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
+#1 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
+[07-Nov-2019 18:27:54 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\wordpress\wp-content\themes\customtwentysixteen\functions.php:785
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-config.php(93): require_once()
+#1 C:\xampp\htdocs\wordpress\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#4 {main}
+
+Next Exception: syntax error, unexpected '}', expecting ')' in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php:86
+Stack trace:
+#0 [internal function]: QM_Collector_PHP_Errors->exception_handler(Object(ParseError))
+#1 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\plugins\query-monitor\collectors\php_errors.php on line 86
