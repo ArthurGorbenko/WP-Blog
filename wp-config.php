@@ -1,4 +1,5 @@
 <?php
+define('JWT_AUTH_SECRET_KEY', 'DjKb1996'); // Replace 'your-top-secret-key' with an actual secret key.
 /**
  * The base configuration for WordPress
  *
@@ -91,3 +92,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /** Sets up WordPress vars and included files. */
 require_once( ABSPATH . 'wp-settings.php' );
+
+define('JWT_AUTH_CORS_ENABLE', true);

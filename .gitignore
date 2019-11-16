@@ -2,6 +2,7 @@
 uploads
 */wp-config.php
 
+
 # workspace files are user-specific
 *.sublime-workspace
 
