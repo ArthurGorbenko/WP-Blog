@@ -26,7 +26,7 @@ class Rest_Controller_News
                 'callback' => array($this, 'register_user'),
             ),
         ));
-        $auth_required_namespace = '/jwt-auth/v1' . $non_auth_namespace;
+        $auth_required_namespace = '/jwt-auth/v1/' . $non_auth_namespace;
         register_rest_route($auth_required_namespace, '/published/(?P<ID>[\d]+)', array(
             array(
                 'methods' => WP_REST_Server::READABLE,
