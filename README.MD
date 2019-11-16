@@ -3,7 +3,7 @@
 - [x] create custom form with all kind of input
 - [x] save data to custom entity(CPT in WP)
 - [x] make REST API for this entity
-- [x] handle user account's stuff
+- [x] handle user account permissions
 
 ### What I did : 
 - created `custom-form.php` template
