@@ -3,7 +3,7 @@
 - [x] create custom form with all kind of input
 - [x] save data to custom entity(CPT in WP)
 - [x] make REST API for this entity
-- [x] handle user account's staff
+- [x] handle user account permissions
 
 ### What I did : 
 - created `custom-form.php` template
@@ -32,7 +32,7 @@
 ### Install:
  - clone project to your's server enviroment
  - import DB dump to wordpress DB
- - go to `{domen}/wordpress/wp-admin`
+ - go to `{hostname}/wordpress/wp-admin`
                      
 Login  | Password
 ------------- | -------------
