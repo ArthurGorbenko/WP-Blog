@@ -78,10 +78,7 @@ class Rest_Controller_News
     public function create_news($request)
     {
         $ID = $this->store_news_data($_POST);
-        if (isset($_POST['file'])) {
-            echo $_POST['file'];
-            $this->attach_file_to_news('file', $ID);
-        }
+        $this->attach_file_to_news('file', $ID);
         $created_news = get_post($ID);
         if ($created_news) {
             return new WP_REST_Response($created_news, 200);
@@ -135,6 +132,8 @@ class Rest_Controller_News
         set_post_thumbnail($news_ID, $attachment_id);
         if (!is_wp_error($attachment_id)) {
             return $attachment_id;
+        } else {
+            echo 'error';
         }
         
     }
