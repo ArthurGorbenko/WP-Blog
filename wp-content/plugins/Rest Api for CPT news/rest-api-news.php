@@ -77,11 +77,17 @@ class Rest_Controller_News
 
     public function create_news($request)
     {
-        $params = $request->get_params();
         $ID = $this->store_news_data($_POST);
-        $this->attach_file_to_news('file', $ID);
+        if (isset($_POST['file'])) {
+            echo $_POST['file'];
+            $this->attach_file_to_news('file', $ID);
+        }
         $created_news = get_post($ID);
-        return new WP_REST_Response($created_news, 200);
+        if ($created_news) {
+            return new WP_REST_Response($created_news, 200);
+        } else {
+            return new WP_REST_Response('Error.', 200);
+        }
     }
 
     public function register_user($request)
@@ -96,7 +102,7 @@ class Rest_Controller_News
             ));
             return new WP_REST_Response($ID, 200);
         }
-        return new WP_REST_Response($ID,200);
+        return new WP_REST_Response($ID, 200);
 
     }
 
@@ -127,12 +133,10 @@ class Rest_Controller_News
 
         $attachment_id = media_handle_upload($file, $news_ID);
         set_post_thumbnail($news_ID, $attachment_id);
-        if (is_wp_error($attachment_id)) {
-            echo "Error";
-        } else {
-            echo "Success.";
+        if (!is_wp_error($attachment_id)) {
+            return $attachment_id;
         }
-        return $attachment_id;
+        
     }
 
     public function get_item($ID)
