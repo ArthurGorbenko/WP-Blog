@@ -1,5 +1,5 @@
 <?php
-define('JWT_AUTH_SECRET_KEY', 'DjKb1996'); // Replace 'your-top-secret-key' with an actual secret key.
+define('JWT_AUTH_SECRET_KEY', 'DjKb1996');
 /**
  * The base configuration for WordPress
  *
