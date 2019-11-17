@@ -23,17 +23,22 @@
     - DELETE : delete news with `{ID}`
   - created [React News app](https://github.com/ArthurGorbenko/NewsApp) based on this REST API
     
-### What i need to do : 
+### What I need to do : 
 - [ ] handle request,sql errors
 - [ ] scale REST API with PUT,OPTION methods
 - [ ] add custom fields to quick edit mode
 
 
-### Install:
+### Installation:
  - clone project to your server enviroment
- - import DB dump to wordpress DB
- - go to `{hostname}/wordpress/wp-admin`
+ - import `wp-db-dump.sql` to wordpress DB though mysql cli or phpmyadmin and make necessary changes in `wp-config.php`
+ - browse to http://localhost/WP-Blog/
                      
 Login  | Password
 ------------- | -------------
-admin | wordpress
+admin | admin
+
+### Troubleshooting broken links
+if you run into error 404 when browsing the site try:
+1. switching from `post name` to `plain` and back to `post name` at http://localhost/WP-Blog/wp-admin/options-permalink.php to update permalink structure
+2. make sure your `httpd.conf` has line `LoadModule rewrite_module modules/mod_rewrite.so` and `AllowOverride All` under your http root dir `(<Directory "/srv/http">)`
