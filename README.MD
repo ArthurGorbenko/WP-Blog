@@ -30,7 +30,7 @@
 
 
 ### Install:
- - clone project to your's server enviroment
+ - clone project to your server enviroment
  - import DB dump to wordpress DB
  - go to `{hostname}/wordpress/wp-admin`
                      
